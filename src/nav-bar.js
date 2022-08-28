@@ -3,6 +3,14 @@ export default function renderNavBar() {
 	navbar.innerHTML = `
     <header>
         <nav>
+        <div class="logo">
+        <img src="./images/pizza-slice.svg" alt="" srcset="">
+        <div class="logo-text-wrapper">
+            <h1>TONY'S</h1>
+            <h1 class="h1-pizza">PIZZA</h1>
+            <h1>ORIGINAL</h1>
+        </div>
+    </div>
             <ul>
                 <li class="home">Home</li>
                 <li class="menu">Menu</li>
