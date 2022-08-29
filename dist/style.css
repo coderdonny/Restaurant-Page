@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+	--dark: #050506;
+	--red: #f43b22;
+	--yellow: #fecb21;
+	--primary-font: 'Bebas Neue', cursive;
+	--secondary-font: 'Roboto', sans-serif;
+}
 
 body {
 	margin: 0;
 	height: 100vh;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -32,7 +39,9 @@ nav ul {
 nav ul li {
 	list-style: none;
 	color: #ffffff;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--secondary-font);
+
+	font-weight: 300;
 }
 
 nav ul li:hover {
@@ -49,9 +58,10 @@ nav ul li:hover {
 
 .logo h1 {
 	margin: 0px;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--secondary-font);
 	font-size: 1rem;
-	color: #fecb21;
+	color: var(--yellow);
+	font-weight: 300;
 }
 
 .logo img {
@@ -59,7 +69,7 @@ nav ul li:hover {
 }
 
 .logo .h1-pizza {
-	color: #f43b22;
+	color: var(--red);
 }
 
 .hero {
@@ -88,8 +98,8 @@ nav ul li:hover {
 }
 
 .image-container:last-child img {
-	-webkit-filter: brightness(75%);
-	filter: brightness(75%);
+	-webkit-filter: brightness(20%);
+	filter: brightness(20%);
 }
 
 .content {
@@ -100,7 +110,7 @@ nav ul li:hover {
 	top: 30%;
 	width: 100%;
 	text-align: center;
-	font-family: 'Bebas Neue', cursive;
+	font-family: var(--primary-font);
 	font-size: 1.5rem;
 }
 
@@ -114,11 +124,13 @@ h3 {
 	border-radius: 25px;
 	padding: 10px 30px;
 	font-size: 1.2rem;
-	background-color: #fecb21;
+	background-color: var(--yellow);
 	color: rgb(0, 0, 0);
 	transition: all 0.3s;
 	margin-top: 25px;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--secondary-font);
+	font-weight: 300;
+	font-size: 1.1rem;
 }
 
 .button-wrapper {
@@ -129,4 +141,85 @@ h3 {
 .content button:hover {
 	background-color: #fff4cf;
 	cursor: pointer;
+}
+
+.hours-of-operation {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 10%;
+	width: 100%;
+	text-align: left;
+	justify-content: left;
+	font-family: var(--secondary-font);
+	font-size: 1.5rem;
+}
+
+.hours-of-operation h1 {
+	font-family: var(--primary-font);
+}
+
+#tablehours td {
+	font-size: 1.3rem;
+	font-weight: 300;
+	width: 180px;
+	height: 35px;
+}
+
+.weekend-specials {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--dark);
+	height: 750px;
+}
+
+.weekend-specials h1 {
+	font-family: var(--secondary-font);
+	font-weight: 100;
+	color: white;
+	margin: 0;
+	font-size: 3rem;
+	margin: 50px 0px;
+}
+
+.specials-wrapper {
+	display: flex;
+	gap: 35px;
+	height: 390px;
+}
+
+.special-card {
+	width: 300px;
+	background-color: var(--yellow);
+	border-radius: 10px;
+	font-family: var(--secondary-font);
+	text-align: center;
+	font-weight: 100;
+	color: rgb(0, 0, 0);
+}
+
+.special-card img {
+	max-height: 100%;
+	max-width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.special-card:hover {
+	cursor: pointer;
+}
+
+.special-card h4 {
+	font-weight: 400;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.special-card h5 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 0.9rem;
 }
