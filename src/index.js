@@ -23,7 +23,7 @@ window.onload = function () {
 	seeMenuBtn.addEventListener(
 		'click',
 		function () {
-			renderMenuPage();
+			renderMenuPage;
 		},
 		true
 	);
@@ -65,6 +65,7 @@ function renderMenuPage() {
 	clicked = 'menu';
 }
 
+//removes page before rendering next one
 function removeLastChild() {
 	const content = document.querySelector('#content');
 	while (content.childNodes.length > 1) {
