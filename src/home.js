@@ -1,6 +1,4 @@
 export default function homePage() {
-	console.log('homepage module test');
-
 	const home = document.createElement('div');
 
 	home.innerHTML = `
@@ -13,7 +11,7 @@ export default function homePage() {
                 <h3>oven-fired goodness</h3>
                 <div class="button-wrapper">
                     <button>Order Now</button>
-                    <button>See Menu</button>
+                    <button class="see-menu">See Menu</button>
                 </div>
             </div>
         </div>
@@ -77,13 +75,8 @@ export default function homePage() {
             </div>
 
         </div>
-        <button>See full Menu</button>
+        <button class="see-menu">See full Menu</button>
     </div>
-
-    <footer>
-        <p>Copyright © 2022 Daniel Karpierz</p>
-    </footer>
-
     `;
 
 	return home;
