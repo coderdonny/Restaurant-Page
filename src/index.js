@@ -10,10 +10,6 @@ const aboutUs = document.querySelector('.about-us');
 
 content.appendChild(renderNavBar());
 
-function buttonClicked() {
-	console.log('Button clicked');
-}
-
 window.onload = function () {
 	const home = document.querySelector('.home');
 	home.addEventListener(
