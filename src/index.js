@@ -23,7 +23,7 @@ window.onload = function () {
 	seeMenuBtn.addEventListener(
 		'click',
 		function () {
-			renderMenuPage;
+			renderMenuPage();
 		},
 		true
 	);
