@@ -365,8 +365,27 @@ h3 {
 	margin-bottom: 25px;
 }
 
+.pasta-menu {
+	display: grid;
+	grid-template-rows: 360px;
+	grid-template-columns: repeat(2, 300px);
+	gap: 25px;
+	margin: 0%;
+	margin-bottom: 25px;
+}
+
+.sandwich-menu {
+	display: grid;
+	grid-template-rows: 350px;
+	grid-template-columns: repeat(2, 300px);
+	gap: 25px;
+	margin: 0%;
+	margin-bottom: 75px;
+}
+
 .pizza-card,
-.protein-card {
+.protein-card,
+.pasta-card {
 	background-color: var(--yellow);
 	border-radius: 10px;
 	font-family: var(--secondary-font);
@@ -382,14 +401,9 @@ h3 {
 	padding-top: 20px;
 }
 
-.pizza-card:hover {
-	-webkit-filter: brightness(115%);
-	filter: brightness(115%);
-	margin-top: -12px;
-	cursor: pointer;
-}
-
-.protein-card:hover {
+.protein-card:hover,
+.pizza-card:hover,
+.pasta-card:hover {
 	-webkit-filter: brightness(115%);
 	filter: brightness(115%);
 	margin-top: -12px;
@@ -407,6 +421,13 @@ h3 {
 }
 
 .protein-card img {
+	max-height: 80%;
+	max-width: 80%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.pasta-card img {
 	max-height: 80%;
 	max-width: 80%;
 	border-top-left-radius: 10px;
@@ -447,11 +468,11 @@ h3 {
 }
 
 .location-content {
-	flex: 1 1 50%;
 	height: 450px;
-	background-color: #1d0704;
+	background-color: var(--dark-red);
 	border-bottom-left-radius: 25px;
 	border-top-left-radius: 25px;
+	width: 500px;
 }
 
 .location-hours {
@@ -476,7 +497,7 @@ h3 {
 
 .location-hours p {
 	margin-top: 40px;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: 300;
 	color: white;
 }
