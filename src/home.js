@@ -121,7 +121,7 @@ export default function homePage() {
             <div class="location-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.625840899856!2d-79.61719788423535!3d43.5309945683418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4513c06c0a99%3A0xac6010465fd19370!2sTony%E2%80%99s%20Panini%20%26%20Pizza!5e0!3m2!1sen!2sca!4v1662063852708!5m2!1sen!2sca"
-                    style="filter: invert(100%)" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    style="filter: invert(100%)" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>

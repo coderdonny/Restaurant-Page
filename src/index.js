@@ -4,7 +4,7 @@ import menuPage from './menu';
 import renderFooter from './footer';
 // import { cli } from 'webpack';
 
-let clicked = 'home';
+// let clicked = 'home';
 
 const content = document.querySelector('#content');
 const home = document.querySelector('.home');
@@ -20,13 +20,11 @@ window.onload = function () {
 	const menu = document.querySelector('.menu');
 	const seeMenuBtn = document.querySelector('.see-menu');
 
-	seeMenuBtn.addEventListener(
-		'click',
-		function () {
-			renderMenuPage();
-		},
-		true
-	);
+	document.addEventListener('click', function (e) {
+		if (e.target.classList.contains('see-menu')) {
+			seeMenu();
+		}
+	});
 
 	home.addEventListener(
 		'click',
@@ -46,23 +44,21 @@ window.onload = function () {
 };
 
 function renderHomePage() {
-	if (clicked === 'home') {
-		return;
-	}
 	removeLastChild();
 	content.appendChild(homePage());
 	content.appendChild(renderFooter());
-	clicked = 'home';
 }
 
 function renderMenuPage() {
-	if (clicked === 'menu') {
-		return;
-	}
 	removeLastChild();
 	content.appendChild(menuPage());
 	content.appendChild(renderFooter());
-	clicked = 'menu';
+}
+
+function seeMenu() {
+	removeLastChild();
+	content.appendChild(menuPage());
+	content.appendChild(renderFooter());
 }
 
 //removes page before rendering next one
