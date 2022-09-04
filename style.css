@@ -96,6 +96,7 @@ footer p {
 .hero {
 	position: relative;
 	display: flex;
+	flex-direction: row;
 	height: 750px;
 	text-align: center;
 	color: white;
@@ -518,4 +519,106 @@ iframe {
 	border-bottom-right-radius: 25px;
 	border-top-right-radius: 25px;
 	border-style: none;
+}
+
+@media (max-width: 450px) {
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	.header {
+	}
+
+	nav {
+		justify-content: center;
+		padding-left: 100px;
+		gap: 0;
+	}
+
+	.hero {
+		display: flex;
+		width: 100%;
+		margin: 0;
+		flex-direction: column;
+	}
+
+	.hero .content h1 {
+		font-size: 2.5rem;
+	}
+
+	.hero .content h3 {
+		font-size: 2rem;
+	}
+
+	.image-container:last-child {
+		display: none;
+	}
+
+	.image-container {
+		display: block;
+	}
+
+	.specials-wrapper {
+		flex-direction: column;
+	}
+
+	.location-wrapper {
+		flex-direction: column;
+	}
+
+	.hours-of-operation h1 {
+		margin: 10px;
+		font-size: 1.75rem;
+	}
+
+	.hours-of-operation {
+		font-size: 1rem;
+	}
+
+	#tablehours td {
+		font-size: 1rem;
+		width: 140px;
+		height: 30px;
+	}
+
+	.hours-of-operation p {
+		margin-top: 15px;
+		font-size: 0.7rem;
+	}
+
+	.weekend-specials h1 {
+		font-size: 2rem;
+	}
+
+	.weekend-specials {
+		height: 1450px;
+	}
+
+	.special-card {
+		height: 1850px;
+	}
+
+	.special-card h5 {
+		margin-bottom: 15px;
+	}
+
+	.weekend-specials button {
+		margin-top: 800px;
+	}
+
+	.location-content {
+		width: 80%;
+		border-radius: 0px;
+	}
+
+	iframe {
+		width: 450px;
+		border-radius: 0px;
+	}
+
+	.location-info {
+		height: 1025px;
+	}
 }
