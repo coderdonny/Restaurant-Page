@@ -521,7 +521,7 @@ iframe {
 	border-style: none;
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 830px) {
 	html,
 	body {
 		width: 100%;
@@ -534,6 +534,116 @@ iframe {
 	nav {
 		justify-content: center;
 		padding-left: 100px;
+		gap: 0;
+	}
+
+	.hero {
+		display: flex;
+		width: 100%;
+		margin: 0;
+		flex-direction: column;
+	}
+
+	.hero .content h1 {
+		font-size: 2.5rem;
+	}
+
+	.hero .content h3 {
+		font-size: 2rem;
+	}
+
+	.image-container:last-child {
+		display: none;
+	}
+
+	.image-container {
+		display: block;
+	}
+
+	.specials-wrapper {
+		flex-direction: column;
+	}
+
+	.location-wrapper {
+		flex-direction: column;
+	}
+
+	.hours-of-operation h1 {
+		margin: 10px;
+		font-size: 1.75rem;
+	}
+
+	.hours-of-operation {
+		font-size: 1rem;
+	}
+
+	#tablehours td {
+		font-size: 1rem;
+		width: 140px;
+		height: 30px;
+	}
+
+	.hours-of-operation p {
+		margin-top: 15px;
+		font-size: 0.7rem;
+	}
+
+	.weekend-specials h1 {
+		font-size: 2rem;
+	}
+
+	.weekend-specials {
+		height: 2150px;
+	}
+
+	.special-card {
+		height: 1850px;
+	}
+
+	.special-card h5 {
+		margin-bottom: 15px;
+	}
+
+	.special-card {
+		width: 500px;
+	}
+
+	.weekend-specials button {
+		margin-top: 1450px;
+	}
+
+	.location-content {
+		width: 100%;
+		border-radius: 0px;
+	}
+
+	iframe {
+		width: 830px;
+		border-radius: 0px;
+	}
+
+	.location-info {
+		height: 1025px;
+	}
+
+	#locationhours td {
+		font-size: 1.1rem;
+		font-weight: 100;
+		width: 170px;
+		height: 35px;
+	}
+} */
+
+@media (max-width: 450px) {
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	nav {
+		justify-content: center;
+		margin-right: 20px;
 		gap: 0;
 	}
 
