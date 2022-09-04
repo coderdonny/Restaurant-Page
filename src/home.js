@@ -5,7 +5,7 @@ export default function homePage() {
     <div class="hero">
 
         <div class="image-container">
-            <img src="./images/oven-fired-pizza.avif" alt="" srcset="">
+            <img src="./images/oven-fired-pizza.webp" alt="" srcset="">
             <div class="content">
                 <h1>Welcome to Tony's Pizza</h1>
                 <h3>oven-fired goodness</h3>
@@ -16,7 +16,7 @@ export default function homePage() {
             </div>
         </div>
         <div class="image-container">
-            <img src="images/fancy-pizza.jpeg" alt="" srcset="">
+            <img src="./images/fancy-pizza.jpeg" alt="" srcset="">
             <div class="hours-of-operation">
                 <h1>Hours of Operation</h1>
                 <table id="tablehours">
