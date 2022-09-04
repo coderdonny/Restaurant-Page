@@ -14,7 +14,6 @@ export default function renderNavBar() {
             <ul>
                 <li class="home">Home</li>
                 <li class="menu">Menu</li>
-                // <li class="about-us">About Us</li>
             </ul>
         </nav>
     </header>

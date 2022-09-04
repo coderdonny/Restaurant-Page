@@ -16,7 +16,7 @@ export default function homePage() {
             </div>
         </div>
         <div class="image-container">
-            <img src="./images/fancy-pizza.jpeg" alt="" srcset="">
+            <img src="images/fancy-pizza.jpeg" alt="" srcset="">
             <div class="hours-of-operation">
                 <h1>Hours of Operation</h1>
                 <table id="tablehours">
