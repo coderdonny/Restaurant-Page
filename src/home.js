@@ -1,6 +1,6 @@
 export default function homePage() {
 	const home = document.createElement('div');
-
+	home.classList.add('home');
 	home.innerHTML = `
     <div class="hero">
 
