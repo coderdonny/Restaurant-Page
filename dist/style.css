@@ -62,6 +62,8 @@ footer {
 	text-align: center;
 	justify-content: center;
 
+	margin-top: auto;
+
 	-webkit-box-shadow: 0px 9px 49px 16px #000000;
 	box-shadow: 0px 9px 49px 16px #000000;
 }
@@ -521,14 +523,11 @@ iframe {
 	border-style: none;
 }
 
-/* @media (max-width: 830px) {
+@media (min-width: 800px) and (max-width: 1200px) {
 	html,
 	body {
 		width: 100%;
 		overflow-x: hidden;
-	}
-
-	.header {
 	}
 
 	nav {
@@ -562,6 +561,7 @@ iframe {
 
 	.specials-wrapper {
 		flex-direction: column;
+		height: auto;
 	}
 
 	.location-wrapper {
@@ -593,11 +593,8 @@ iframe {
 	}
 
 	.weekend-specials {
-		height: 2150px;
-	}
-
-	.special-card {
-		height: 1850px;
+		overflow: hidden;
+		/* position: relative; */
 	}
 
 	.special-card h5 {
@@ -605,11 +602,16 @@ iframe {
 	}
 
 	.special-card {
-		width: 500px;
+		width: 50%;
+		align-self: center;
 	}
 
 	.weekend-specials button {
-		margin-top: 1450px;
+		/* margin-top: 1450px; */
+		/* display: block; */
+		width: 250px;
+		align-self: center;
+		margin-top: 0;
 	}
 
 	.location-content {
@@ -618,7 +620,7 @@ iframe {
 	}
 
 	iframe {
-		width: 830px;
+		width: 1200px;
 		border-radius: 0px;
 	}
 
@@ -632,9 +634,13 @@ iframe {
 		width: 170px;
 		height: 35px;
 	}
-} */
 
-@media (max-width: 450px) {
+	footer {
+		margin-top: auto;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 800px) {
 	html,
 	body {
 		width: 100%;
@@ -672,6 +678,7 @@ iframe {
 
 	.specials-wrapper {
 		flex-direction: column;
+		height: 100%;
 	}
 
 	.location-wrapper {
@@ -706,16 +713,18 @@ iframe {
 		height: 1450px;
 	}
 
-	.special-card {
+	/* .special-card {
 		height: 1850px;
-	}
+	} */
 
 	.special-card h5 {
 		margin-bottom: 15px;
 	}
 
 	.weekend-specials button {
-		margin-top: 800px;
+		width: 180px;
+		align-self: center;
+		margin: 0;
 	}
 
 	.location-content {
@@ -724,7 +733,7 @@ iframe {
 	}
 
 	iframe {
-		width: 450px;
+		width: 800px;
 		border-radius: 0px;
 	}
 

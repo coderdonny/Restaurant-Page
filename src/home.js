@@ -73,7 +73,7 @@ export default function homePage() {
                 <h4>2 Extra Large Pizzas, 4 Toppings, 40 Wings</h4>
                 <h5>$64.95 CAD</h5>
             </div>
-
+            
         </div>
         <button class="see-menu">See full Menu</button>
     </div>
